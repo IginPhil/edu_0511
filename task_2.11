@@ -1,0 +1,21 @@
+
+/*
+Задание: Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось больше 10-ти.
+*/
+
+public class Main {
+
+  public static void main(String[] args) {
+    int[] nums = {2, 4, 10, 4, 1, 3, 4};
+    int sum = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+      sum = sum + nums[i];
+
+      if (sum > 10) {
+        System.out.println("необходимо сложить минимальное количество элементов  " + (i));
+
+      }
+    }
+  }
+}
+
