@@ -1,3 +1,4 @@
+
 /* Задача наполнить корабельный бассейн. Нужно посчитать, сколько литров воды нужно для заполнения бассейна до бортов.
 Известно, что бассейн имеет линейные размеры a × b × c, заданные в метрах.
 Эти размеры передаются запрашиваются у пользователя. Прграмма должена вывести на экран количество литров воды,
@@ -11,16 +12,19 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Введите высоту: ");
-        Scanner Scanner = new Scanner(System.in);
-        double height = Scanner.nextDouble();
-        System.out.println("Введите глубину: ");
-        Scanner Scanner2 = new Scanner(System.in);
-        double depth = Scanner.nextDouble();
-        System.out.println("Введите ширину: ");
-        Scanner Scanner3 = new Scanner(System.in);
-        double widht = Scanner.nextDouble();
-        System.out.println(height * depth * widht);
-    }
+
+  public static void main(String[] args) {
+    int waterVolume = 1000;
+    System.out.println("Введите высоту: ");
+    Scanner Scanner = new Scanner(System.in);
+    double height = Scanner.nextDouble();
+    System.out.println("Введите глубину: ");
+    Scanner Scanner2 = new Scanner(System.in);
+    double depth = Scanner.nextDouble();
+    System.out.println("Введите ширину: ");
+    Scanner Scanner3 = new Scanner(System.in);
+    double widht = Scanner.nextDouble();
+    System.out.println("Обьем воды в бассейне равен: " + height * depth * widht * waterVolume);
+
+  }
 }
