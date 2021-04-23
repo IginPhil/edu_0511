@@ -5,17 +5,17 @@
 public class Main {
 
   public static void main(String[] args) {
-    int[] nums = {2, 8, 7, 9, 8, 6, 6};
+    int[] nums = {2, 9, 9, 9, 8, 19, 6};
     int firstNums = nums[0];
     for (int i = 1; i < nums.length; i++) {
-      if (firstNums == nums[i]) System.out.println(" перменные одинаковые - ДА"); {
-        firstNums = nums[i];
+      if (firstNums == nums[i]) {
+        System.out.println(" перменные одинаковые - ДА");
       }
-      System.out.println(" перменные не одинаковые - НЕТ");
-      {
+
+      if (!(firstNums == nums[i])) {
+        System.out.println("перменные не одинаковые НЕТ");
+        firstNums = nums[i];
       }
     }
   }
 }
-
-//Владлен, мне очень тяжело дается логика, программу я написал, обьясните пожалуйста что в ней не так?
