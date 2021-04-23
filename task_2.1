@@ -1,3 +1,4 @@
+
 /*Вывести на экран все возможные комбинации слов "Мама", "Мыла", "Раму".
 Подсказка: их 6 штук.
 Каждую комбинацию вывести с новой строки. Слова не разделять.
@@ -12,13 +13,15 @@
 •	Должны быть выведены все возможные комбинации. */
 
 public class Main {
-    public static void main(String[] args) {
-        String[] Cleaner = {"Мама", "Мыла", "Раму"};
-        System.out.println(Cleaner[0]+Cleaner[1]+Cleaner[2]);
-        System.out.println(Cleaner[0]+Cleaner[2]+Cleaner[1]);
-        System.out.println(Cleaner[1]+Cleaner[0]+Cleaner[2]);
-        System.out.println(Cleaner[1]+Cleaner[2]+Cleaner[0]);
-        System.out.println(Cleaner[2]+Cleaner[1]+Cleaner[0]);
-        System.out.println(Cleaner[2]+Cleaner[0]+Cleaner[1]);
+
+  public static void main(String[] args) {
+    String[] cleaner = {"Мама", "Мыла", "Раму"};
+    for (int i = 0; i < cleaner.length; i++) {
+      for (int j = 0; j < cleaner.length; j++) {
+        if (i != j) {
+          System.out.println(cleaner[i] + cleaner[j] + cleaner[3 - i - j]);
+        }
+      }
     }
+  }
 }
