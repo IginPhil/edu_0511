@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        byte a = 1; // Минимальное время вклада, 1 год.
+        byte b = 5; // Максимальное время вклада, 5 лет.
+        double year;
+        System.out.println("Введите сумму депозита: ");
+        Scanner deposit = new Scanner(System.in);
+        double d = deposit.nextInt();
+        System.out.println("Введите процент вклада: ");
+        Scanner percent = new Scanner(System.in);
+        double p = percent.nextInt();
+        for (year = a; year <= b; year++) {
+            System.out.println("Размер вклада увеличился за " + year + " год " + " и стал равен " + Math.round(d * Math.pow(1 + (p / 100), year)) + " рублей ");
+        }
+    }
