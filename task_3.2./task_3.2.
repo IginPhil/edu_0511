@@ -12,35 +12,31 @@
 •	Метод min(a, b, c, d) должен использовать метод min(a, b)
 •	Метод min(a, b, c, d) должен возвращать минимальное значение из чисел a, b, c, d.
 */
-
 public class Main {
-
-  public static int min(int a, int b, int c, int d) {
-    if (min(a, b) > min(c, d)) {
-      if (c > d) {
-        return d;
-      } else {
-        return c;
-      }
+    public static int min(int a, int b, int c, int d) {
+        if (min(a, b) > min(c, d)) {
+            if (c > d) {
+                return d;
+            } else {
+                return c;
+            }
+        }
+        return a;
     }
-    return a;
-  }
-
-  public static int min(int a, int b) {
-    if (a > b) {
-      return b;
-    } else {
-      return a;
+    public static int min(int a, int b) {
+        if (a > b) {
+            return b;
+        } else {
+            return a;
+        }
     }
-
-  }
-
-  public static void main(String[] args) throws Exception {
-    System.out.println(min(-20, -10));
-    System.out.println(min(-40, -10, -30, 40));
-    System.out.println(min(-20, -40, -30, 40));
-    System.out.println(min(-20, -10, -40, 40));
-    System.out.println(min(-20, -10, -30, -40));
-  }
+    public static void main(String[] args) {
+        System.out.println(min(-20, -10));
+        System.out.println(min(-40, -10, -30, 40));
+        System.out.println(min(-20, -40, -30, 40));
+        System.out.println(min(-20, -10, -40, 40));
+        System.out.println(min(-20, -10, -30, -40));
+    }
 }
-Программа выдает ошибку на 26 строке если я удаляю return a; я не понимаю почему он там должен быть. Логика программы реализовывается только в 41 строке при выводе выдается -20  вместо -40
+//Программа выдает ошибку на 26 строке если я удаляю return a; я не понимаю почему он там должен быть.
+// Логика программы реализовывается только в 41 строке при выводе выдается -20  вместо -40
