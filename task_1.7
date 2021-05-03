@@ -7,24 +7,19 @@
 Пользователь даёт числа 25, 5, 2.
 Пример вывода:
 250000 */
-
-
 import java.util.Scanner;
-
 public class Main {
-
-  public static void main(String[] args) {
-    int waterVolume = 1000;
-    System.out.println("Введите высоту: ");
-    Scanner Scanner = new Scanner(System.in);
-    double height = Scanner.nextDouble();
-    System.out.println("Введите глубину: ");
-    Scanner Scanner2 = new Scanner(System.in);
-    double depth = Scanner.nextDouble();
-    System.out.println("Введите ширину: ");
-    Scanner Scanner3 = new Scanner(System.in);
-    double widht = Scanner.nextDouble();
-    System.out.println("Обьем воды в бассейне равен: " + height * depth * widht * waterVolume);
-
-  }
+    public static void main(String[] args) {
+        int waterVolume = 1000;
+        System.out.println("Введите высоту: ");
+        Scanner Scanner = new Scanner(System.in);
+        double height = Scanner.nextDouble();
+        System.out.println("Введите ширину: ");
+        Scanner Scanner2 = new Scanner(System.in);
+        double depth = Scanner.nextDouble();
+        System.out.println("Введите глубину: ");
+        Scanner Scanner3 = new Scanner(System.in);
+        double widht = Scanner.nextDouble();
+        System.out.println("Обьем воды в бассейне равен: " + height * depth * widht * waterVolume);
+    }
 }
